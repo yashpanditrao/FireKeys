@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "FireKeys",
+  "version": "1.0",
+  "description": "Open Websites quicker with FireKeys",
+  "permissions": ["activeTab"],
+  "commands": {
+    "toggle-gpt": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K"
+      },
+      "description": "Open ChatGPT"
+    },
+    "toggle-x": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+      },
+      "description": "Open X"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+      
+    }
+  }
+}
