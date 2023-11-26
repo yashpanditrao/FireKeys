@@ -11,6 +11,12 @@
       },
       "description": "Open ChatGPT"
     },
+    "toggle-perp": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+P"
+      },
+      "description": "Open Perplexity"
+    },
     "toggle-x": {
       "suggested_key": {
         "default": "Ctrl+Shift+X"
