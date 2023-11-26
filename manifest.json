@@ -13,7 +13,7 @@
     },
     "toggle-perp": {
       "suggested_key": {
-        "default": "Ctrl+Alt+P"
+        "default": "Ctrl+Shift+Q"
       },
       "description": "Open Perplexity"
     },
