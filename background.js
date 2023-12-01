@@ -13,6 +13,13 @@ chrome.commands.onCommand.addListener(function (command) {
       chrome.tabs.create({ url: xUrl });
     });
   }
+  if (command === "open-replit") {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      // Replace the URL with the ChatGPT URL or the desired URL
+      const xUrl = "https://replit.com/";
+      chrome.tabs.create({ url: xUrl });
+    });
+  }
   if (command === "toggle-perp") {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       // Replace the URL with the ChatGPT URL or the desired URL

@@ -23,6 +23,13 @@
       },
       "description": "Open X"
     }
+    ,
+    "open-replit": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U"
+      },
+      "description": "Open Replit"
+    }
   },
   "background": {
     "service_worker": "background.js"
