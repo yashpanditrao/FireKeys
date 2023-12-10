@@ -1,30 +1,28 @@
+const commandActions = [
+  {
+    command: "toggle-gpt",
+    url: "https://chat.openai.com/"
+  },
+  {
+    command: "toggle-x",
+    url: "https://x.com/"
+  },
+  {
+    command: "open-replit",
+    url: "https://replit.com/~"
+  },
+  {
+    command: "toggle-perp",
+    url: "https://www.perplexity.ai/"
+  }
+];
+
 chrome.commands.onCommand.addListener(function (command) {
-  if (command === "toggle-gpt") {
+  const action = commandActions.find(item => item.command === command);
+
+  if (action) {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      // Replace the URL with the ChatGPT URL or the desired URL
-      const chatGPTUrl = "https://chat.openai.com/";
-      chrome.tabs.create({ url: chatGPTUrl });
-    });
-  }
-  if (command === "toggle-x") {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      // Replace the URL with the ChatGPT URL or the desired URL
-      const xUrl = "https://x.com/";
-      chrome.tabs.create({ url: xUrl });
-    });
-  }
-  if (command === "open-replit") {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      // Replace the URL with the ChatGPT URL or the desired URL
-      const xUrl = "https://replit.com/~";
-      chrome.tabs.create({ url: xUrl });
-    });
-  }
-  if (command === "toggle-perp") {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      // Replace the URL with the ChatGPT URL or the desired URL
-      const xUrl = "https://www.perplexity.ai/";
-      chrome.tabs.create({ url: xUrl });
+      chrome.tabs.create({ url: action.url });
     });
   }
 });
