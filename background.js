@@ -1,28 +1,22 @@
-const commandActions = [
-  {
-    command: "toggle-gpt",
+const commandActions = {
+  "toggle-gpt": {
     url: "https://chat.openai.com/"
   },
-  {
-    command: "toggle-x",
+  "toggle-x": {
     url: "https://x.com/"
   },
-  {
-    command: "open-replit",
+  "open-replit": {
     url: "https://replit.com/~"
   },
-  {
-    command: "toggle-perp",
+  "toggle-perp": {
     url: "https://www.perplexity.ai/"
   }
-];
+};
 
 chrome.commands.onCommand.addListener(function (command) {
-  const action = commandActions.find(item => item.command === command);
+  const action = commandActions[command];
 
   if (action) {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      chrome.tabs.create({ url: action.url });
-    });
+    chrome.tabs.create({ url: action.url });
   }
 });
