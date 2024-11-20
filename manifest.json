@@ -23,11 +23,11 @@
       },
       "description": "Open X"
     },
-    "open-replit": {
+    "open-gmail": {
       "suggested_key": {
         "default": "Ctrl+Shift+U"
       },
-      "description": "Open Replit"
+      "description": "Open Gmail"
     }
   },
   "background": {

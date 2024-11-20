@@ -5,8 +5,8 @@ const commandActions = {
   "toggle-x": {
     url: "https://x.com/"
   },
-  "open-replit": {
-    url: "https://replit.com/~"
+  "open-gmail": {
+    url: "https://mail.google.com/"
   },
   "toggle-perp": {
     url: "https://www.perplexity.ai/"
