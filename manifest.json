@@ -23,11 +23,11 @@
       },
       "description": "Open X"
     },
-    "open-gmail": {
+    "open-notion": {
       "suggested_key": {
         "default": "Ctrl+Shift+U"
       },
-      "description": "Open Gmail"
+      "description": "Open Notion"
     }
   },
   "background": {

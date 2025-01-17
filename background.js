@@ -5,8 +5,8 @@ const commandActions = {
   "toggle-x": {
     url: "https://x.com/"
   },
-  "open-gmail": {
-    url: "https://mail.google.com/"
+  "open-notion": {
+    url: "https://notion.com/"
   },
   "toggle-perp": {
     url: "https://www.perplexity.ai/"
