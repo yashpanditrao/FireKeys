@@ -6,7 +6,7 @@ const commandActions = {
     url: "https://x.com/"
   },
   "open-notion": {
-    url: "https://notion.com/"
+    url: "https://notion.so/"
   },
   "toggle-perp": {
     url: "https://www.perplexity.ai/"
